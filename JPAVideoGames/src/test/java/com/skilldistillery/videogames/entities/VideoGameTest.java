@@ -2,7 +2,6 @@ package com.skilldistillery.videogames.entities;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.junit.jupiter.api.Assertions.fail;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -45,7 +44,7 @@ class VideoGameTest {
 	@Test
 	void test_VideoGame_entity_mapping() {
 		assertNotNull(vg);
-		equals("The Witcher 3: Wild Hunt");
+		assertEquals("The Witcher 3: Wild Hunt", vg.getName());
 	}
 
 }
