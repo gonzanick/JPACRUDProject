@@ -15,7 +15,7 @@
 <div class="row">
 		<div class="col">
 			<h3>Search For A Video Game by ID</h3>
-			<form action="" method="POST">
+			<form action="findGameId.do" method="GET">
 				<input type="text" name="id" placeholder="e.g. 1"/> <input type="submit"
 				
 					value="Get Game Data" class="sub_button"/>

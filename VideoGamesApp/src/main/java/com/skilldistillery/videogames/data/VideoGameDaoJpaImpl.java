@@ -1,5 +1,11 @@
 package com.skilldistillery.videogames.data;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -26,7 +32,13 @@ public class VideoGameDaoJpaImpl implements VideoGameDAO {
 	@Override
 	public List<VideoGame> findAll() {
 		// TODO Auto-generated method stub
+//		return em.find(VideoGame.class);
 		return null;
+	}
+	
+	public List<VideoGame> findGamesByKeyword(String keyPhrase) {
+		List<VideoGame> games = new ArrayList<>();
+		return (List<VideoGame>) em.find(VideoGame.class, games);
 	}
 
 }
