@@ -10,6 +10,10 @@
 
 <h1>Welcome to the Video Game Site</h1>
 
+<p>Here you can check out our top 10 list and see a brief description of each game!</p>
+<br>
+<p>You can also add your own game to the list and add you own description about the game for others to see!</p>
+
 
 
 <div class="row">
